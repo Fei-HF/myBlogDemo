@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: cyan;
+}
+
+#nav{
+	width: 950px;
+	height: 500px;
+	background-color: cyan;
+	margin: 50px auto;
+}
+
+#nav ul li{
+	position: relative;
+	float: left;
+	list-style: none;
+	width: 180px;
+	height: 105px;
+	background: rgba(0,0,0,0.5);
+	margin: 30px 5px;
+}
+
+#nav ul li.six{
+	margin-left: 100px;
+}
+
+#nav ul li:before,#nav ul li:after{
+	content: "";
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 180px;
+	height: 105px;
+	background: rgba(0,0,0,0.5);
+}
+#nav ul li:before{
+	transform: rotate(60deg);
+}
+#nav ul li:after{
+	transform: rotate(-60deg);
+}
+
+#nav ul li img{
+	position: absolute;
+	top: 0;right: 0;bottom: 0;left: 0;
+	margin: auto;
+	z-index: 1000;
+	transition: 2s;
+}
+#nav ul li img:hover{
+	transform: rotate(360deg) scale(1.4);
+}
